@@ -1,0 +1,119 @@
+.box {
+    padding: 0 20%;
+    box-sizing: border-box;
+    height: 350px;
+    font-size: .14rem;
+    display: flex;
+
+    .leftLine {
+        width: .2rem;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .circle {
+            display: block;
+            width: .2rem;
+            height: .2rem;
+            border-radius: 50px;
+            box-sizing: border-box;
+            background-color: #FFFFFF;
+            border: 1px solid #e2e0dc;
+            ;
+        }
+
+        .line {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            height: 100%;
+            width: .03rem;
+            background-color: #f7f3ee;
+        }
+    }
+
+    .rightContent {
+        position: relative;
+        top: -.1rem;
+        left: .2rem;
+        .dates {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 15px;
+            top: 4px;
+            transition: all 1s;
+
+            .trig {
+                width: 0px;
+                height: 0px;
+                border-top: 15px solid transparent;
+                border-right: 15px solid;
+                border-bottom: 15px solid transparent;
+                position: absolute;
+                margin-left: -15px;
+                margin-top: 0px;
+                border-right-color: #f7f3ee;
+            }
+
+            .date {
+                // width: .3rem;
+                background: #f7f3ee;
+                color: #948c76;
+                display: inline-block;
+                padding: 0 .1rem;
+                font-size: .12rem;
+                // position: relative;
+                height: .3rem;
+                line-height: .3rem;
+                // padding: .1rem;
+                vertical-align: top;
+            }
+        }
+        .dates:hover{
+            margin-left: 25px;
+
+        }
+
+        .title {
+            height: 42px;
+            cursor: pointer;
+            p {
+                padding: .2rem 0 .1rem 0;
+            }
+        }
+
+        .imgs {
+            padding: 0.3rem 0;
+
+            img {
+                max-width: 2rem;
+                min-width: 1rem;
+            }
+        }
+
+        .details {
+            font-size: .12rem;
+
+            p {
+                color: #787978;
+            }
+        }
+
+    }
+}
+
+.bottomp {
+    font-size: .12rem;
+    text-align: center;
+    color: #787978;
+    a{
+        color: #948c76;
+        line-height: .3rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .box {
+        padding: 10%;
+    }
+}

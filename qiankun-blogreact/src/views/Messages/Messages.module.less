@@ -1,0 +1,80 @@
+
+.box{
+    font-size: .16rem;
+    padding: 0 20%;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    .title{
+        text-align: center;
+    }
+    .loginState{
+        position: absolute;
+        right: 20%;
+        top: 0;
+    }
+    .msgBox{
+        width: 100%;
+        .msgItem{
+            min-height: 200px;
+            border-bottom: 1px solid rgba(185, 184, 184,.3);
+        }
+        .msg{
+            display: flex;
+            .name{
+                display: inline-block;
+                width: .4rem;
+                height: .4rem;
+                border-radius: 50%;
+                // background-color: red;
+                color: white;
+                text-align: center;
+                line-height: .4rem;
+            }
+            .dates{
+                margin-left: .1rem;
+            }
+            .right{
+                flex: 1;
+                font-size: 12px;
+                margin-left: 20px;
+                .nameTitle{
+                    color: rgba(0,0,0,.45);
+
+                }
+                .dates{
+                    color: #ccc;
+
+                }
+                .msgContent{
+                    padding: 10px 0 20px 0;
+                    font-size: 14px;
+                    text-align: justify;
+                }
+                .huifu{
+                    display: inline-block;
+                    cursor: pointer;
+                    color: rgba(0,0,0,.45);
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
+.bottomp {
+
+    font-size: .12rem;
+    text-align: center;
+    color: #787978;
+
+    a {
+        color: #948c76;
+        line-height: .3rem;
+    }
+}
+.contentdiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
