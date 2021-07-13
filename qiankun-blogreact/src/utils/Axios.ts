@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-15 11:07:44
- * @LastEditTime: 2021-03-18 16:10:49
+ * @LastEditTime: 2021-07-08 09:16:27
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /blogreact/src/utils/axios.js
@@ -11,11 +11,11 @@ import qs from "qs"
 // 引入element 按需引消息提示
 // import { Message } from 'element-ui'
 // 请求 接口地址
-const baseURL = 'http://localhost:3001'
+const baseURL = 'http://39.101.198.177:3001'
 // // 请求 上传图片地址
 // const upImgURL = 'https://kunliyuan.utools.club/kly/admin/uploadFile/upload'
 // // 读取图片地址
-const imgURL = 'http://localhost:3001'
+const imgURL = 'http://39.101.198.177:3001'
 const service = axios.create({
   baseURL,
   timeout: 30000,
